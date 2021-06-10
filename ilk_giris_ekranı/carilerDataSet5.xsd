@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="carilerDataSet5" targetNamespace="http://tempuri.org/carilerDataSet5.xsd" xmlns:mstns="http://tempuri.org/carilerDataSet5.xsd" xmlns="http://tempuri.org/carilerDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="carilerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="carilerConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ilk_giris_ekranı.Properties.Settings.GlobalReference.Default.carilerConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="cariTableAdapter" GeneratorDataComponentClassName="cariTableAdapter" Name="cari" UserDataComponentName="cariTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="carilerConnectionString (Settings)" DbObjectName="cariler.dbo.cari" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT firma_adi, firma_kodu, yetkili_adi, tc_kimlik, durum, bakiye FROM dbo.cari</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="firma_adi" DataSetColumn="firma_adi" />
+              <Mapping SourceColumn="firma_kodu" DataSetColumn="firma_kodu" />
+              <Mapping SourceColumn="yetkili_adi" DataSetColumn="yetkili_adi" />
+              <Mapping SourceColumn="tc_kimlik" DataSetColumn="tc_kimlik" />
+              <Mapping SourceColumn="durum" DataSetColumn="durum" />
+              <Mapping SourceColumn="bakiye" DataSetColumn="bakiye" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="carilerDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="carilerDataSet5" msprop:Generator_UserDSName="carilerDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="cari" msprop:Generator_TableClassName="cariDataTable" msprop:Generator_TableVarName="tablecari" msprop:Generator_TablePropName="cari" msprop:Generator_RowDeletingName="cariRowDeleting" msprop:Generator_RowChangingName="cariRowChanging" msprop:Generator_RowEvHandlerName="cariRowChangeEventHandler" msprop:Generator_RowDeletedName="cariRowDeleted" msprop:Generator_UserTableName="cari" msprop:Generator_RowChangedName="cariRowChanged" msprop:Generator_RowEvArgName="cariRowChangeEvent" msprop:Generator_RowClassName="cariRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="firma_adi" msprop:Generator_ColumnVarNameInTable="columnfirma_adi" msprop:Generator_ColumnPropNameInRow="firma_adi" msprop:Generator_ColumnPropNameInTable="firma_adiColumn" msprop:Generator_UserColumnName="firma_adi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="firma_kodu" msprop:Generator_ColumnVarNameInTable="columnfirma_kodu" msprop:Generator_ColumnPropNameInRow="firma_kodu" msprop:Generator_ColumnPropNameInTable="firma_koduColumn" msprop:Generator_UserColumnName="firma_kodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="yetkili_adi" msprop:Generator_ColumnVarNameInTable="columnyetkili_adi" msprop:Generator_ColumnPropNameInRow="yetkili_adi" msprop:Generator_ColumnPropNameInTable="yetkili_adiColumn" msprop:Generator_UserColumnName="yetkili_adi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tc_kimlik" msprop:Generator_ColumnVarNameInTable="columntc_kimlik" msprop:Generator_ColumnPropNameInRow="tc_kimlik" msprop:Generator_ColumnPropNameInTable="tc_kimlikColumn" msprop:Generator_UserColumnName="tc_kimlik" type="xs:decimal" minOccurs="0" />
+              <xs:element name="durum" msprop:Generator_ColumnVarNameInTable="columndurum" msprop:Generator_ColumnPropNameInRow="durum" msprop:Generator_ColumnPropNameInTable="durumColumn" msprop:Generator_UserColumnName="durum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bakiye" msprop:Generator_ColumnVarNameInTable="columnbakiye" msprop:Generator_ColumnPropNameInRow="bakiye" msprop:Generator_ColumnPropNameInTable="bakiyeColumn" msprop:Generator_UserColumnName="bakiye" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

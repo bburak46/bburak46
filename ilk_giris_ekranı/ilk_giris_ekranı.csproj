@@ -1,0 +1,1470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7343BB24-1802-4939-94D1-8C235FAF74FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ilk_giris_ekranı</RootNamespace>
+    <AssemblyName>ilk_giris_ekranı</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anaform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaform.Designer.cs">
+      <DependentUpon>anaform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baglanti.cs" />
+    <Compile Include="caridüzenlesil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caridüzenlesil.Designer.cs">
+      <DependentUpon>caridüzenlesil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cari.Designer.cs">
+      <DependentUpon>cari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cariara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cariara.Designer.cs">
+      <DependentUpon>cariara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="caridüzsilkay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caridüzsilkay.Designer.cs">
+      <DependentUpon>caridüzsilkay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet33.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet33.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet34.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet34.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet35.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet35.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet36.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet36.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet37.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet37.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet38.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet38.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet39.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet39.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet40.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet40.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet42.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet42.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet43.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet43.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet44.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet44.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet45.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet45.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet46.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet46.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet47.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet47.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet48.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet48.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet49.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet49.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet50.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet50.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet52.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet52.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet53.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet53.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet54.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet54.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet55.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet55.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet56.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet56.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet57.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet57.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet58.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet58.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet59.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet59.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet60.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet60.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet61.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet62.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet62.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet63.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet63.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet64.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet64.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet65.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet65.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet66.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet66.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet67.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet67.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="carilerDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>carilerDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cari_satis_kaydi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cari_satis_kaydi.Designer.cs">
+      <DependentUpon>cari_satis_kaydi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grafik_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grafik_1.Designer.cs">
+      <DependentUpon>grafik_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hatırlatıcı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hatırlatıcı.Designer.cs">
+      <DependentUpon>hatırlatıcı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hesaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hesaplar.Designer.cs">
+      <DependentUpon>hesaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iade.Designer.cs">
+      <DependentUpon>iade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personel_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personel_ekle.Designer.cs">
+      <DependentUpon>personel_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="person_seç.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="person_seç.Designer.cs">
+      <DependentUpon>person_seç.cs</DependentUpon>
+    </Compile>
+    <Compile Include="per_satis_iade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="per_satis_iade.Designer.cs">
+      <DependentUpon>per_satis_iade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="per_satis_kaydi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="per_satis_kaydi.Designer.cs">
+      <DependentUpon>per_satis_kaydi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satis.Designer.cs">
+      <DependentUpon>satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satisformu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisformu.Designer.cs">
+      <DependentUpon>satisformu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satissecme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satissecme.Designer.cs">
+      <DependentUpon>satissecme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satis_fat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satis_fat.Designer.cs">
+      <DependentUpon>satis_fat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokara.Designer.cs">
+      <DependentUpon>stokara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokgör.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokgör.Designer.cs">
+      <DependentUpon>stokgör.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokyükleilk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokyükleilk.Designer.cs">
+      <DependentUpon>stokyükleilk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokyükleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokyükleme.Designer.cs">
+      <DependentUpon>stokyükleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cariac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cariac.Designer.cs">
+      <DependentUpon>cariac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="caridüzesilson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caridüzesilson.Designer.cs">
+      <DependentUpon>caridüzesilson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stok_gör.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stok_gör.Designer.cs">
+      <DependentUpon>stok_gör.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stok_sil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stok_sil.Designer.cs">
+      <DependentUpon>stok_sil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stsfatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stsfatura.Designer.cs">
+      <DependentUpon>stsfatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veriset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veriset.Designer.cs">
+      <DependentUpon>veriset.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anaform.resx">
+      <DependentUpon>anaform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="caridüzenlesil.resx">
+      <DependentUpon>caridüzenlesil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cari.resx">
+      <DependentUpon>cari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cariara.resx">
+      <DependentUpon>cariara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="caridüzsilkay.resx">
+      <DependentUpon>caridüzsilkay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cari_satis_kaydi.resx">
+      <DependentUpon>cari_satis_kaydi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.agq.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grafik_1.resx">
+      <DependentUpon>grafik_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hatırlatıcı.resx">
+      <DependentUpon>hatırlatıcı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hesaplar.resx">
+      <DependentUpon>hesaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iade.resx">
+      <DependentUpon>iade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personel_ekle.resx">
+      <DependentUpon>personel_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="person_seç.resx">
+      <DependentUpon>person_seç.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="per_satis_iade.resx">
+      <DependentUpon>per_satis_iade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="per_satis_kaydi.resx">
+      <DependentUpon>per_satis_kaydi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="satis.resx">
+      <DependentUpon>satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satisformu.resx">
+      <DependentUpon>satisformu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satissecme.resx">
+      <DependentUpon>satissecme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satis_fat.resx">
+      <DependentUpon>satis_fat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokara.resx">
+      <DependentUpon>stokara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokgör.resx">
+      <DependentUpon>stokgör.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokyükleilk.resx">
+      <DependentUpon>stokyükleilk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokyükleme.resx">
+      <DependentUpon>stokyükleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cariac.resx">
+      <DependentUpon>cariac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="caridüzesilson.resx">
+      <DependentUpon>caridüzesilson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stok_gör.resx">
+      <DependentUpon>stok_gör.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stok_sil.resx">
+      <DependentUpon>stok_sil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stsfatura.resx">
+      <DependentUpon>stsfatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veriset.resx">
+      <DependentUpon>veriset.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="carilerDataSet.xsc">
+      <DependentUpon>carilerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet.xss">
+      <DependentUpon>carilerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet1.xsc">
+      <DependentUpon>carilerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet1.xss">
+      <DependentUpon>carilerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet10.xsc">
+      <DependentUpon>carilerDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet10.xss">
+      <DependentUpon>carilerDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet11.xsc">
+      <DependentUpon>carilerDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet11.xss">
+      <DependentUpon>carilerDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet12.xsc">
+      <DependentUpon>carilerDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet12.xss">
+      <DependentUpon>carilerDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet13.xsc">
+      <DependentUpon>carilerDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet13.xss">
+      <DependentUpon>carilerDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet14.xsc">
+      <DependentUpon>carilerDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet14.xss">
+      <DependentUpon>carilerDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet15.xsc">
+      <DependentUpon>carilerDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet15.xss">
+      <DependentUpon>carilerDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet16.xsc">
+      <DependentUpon>carilerDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet16.xss">
+      <DependentUpon>carilerDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet17.xsc">
+      <DependentUpon>carilerDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet17.xss">
+      <DependentUpon>carilerDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet18.xsc">
+      <DependentUpon>carilerDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet18.xss">
+      <DependentUpon>carilerDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet19.xsc">
+      <DependentUpon>carilerDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet19.xss">
+      <DependentUpon>carilerDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet2.xsc">
+      <DependentUpon>carilerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet2.xss">
+      <DependentUpon>carilerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet20.xsc">
+      <DependentUpon>carilerDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet20.xss">
+      <DependentUpon>carilerDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet21.xsc">
+      <DependentUpon>carilerDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet21.xss">
+      <DependentUpon>carilerDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet22.xsc">
+      <DependentUpon>carilerDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet22.xss">
+      <DependentUpon>carilerDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet23.xsc">
+      <DependentUpon>carilerDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet23.xss">
+      <DependentUpon>carilerDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet24.xsc">
+      <DependentUpon>carilerDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet24.xss">
+      <DependentUpon>carilerDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet25.xsc">
+      <DependentUpon>carilerDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet25.xss">
+      <DependentUpon>carilerDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet26.xsc">
+      <DependentUpon>carilerDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet26.xss">
+      <DependentUpon>carilerDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet27.xsc">
+      <DependentUpon>carilerDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet27.xss">
+      <DependentUpon>carilerDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet28.xsc">
+      <DependentUpon>carilerDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet28.xss">
+      <DependentUpon>carilerDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet29.xsc">
+      <DependentUpon>carilerDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet29.xss">
+      <DependentUpon>carilerDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet3.xsc">
+      <DependentUpon>carilerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet3.xss">
+      <DependentUpon>carilerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet30.xsc">
+      <DependentUpon>carilerDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet30.xss">
+      <DependentUpon>carilerDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet31.xsc">
+      <DependentUpon>carilerDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet31.xss">
+      <DependentUpon>carilerDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet32.xsc">
+      <DependentUpon>carilerDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet32.xss">
+      <DependentUpon>carilerDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet33.xsc">
+      <DependentUpon>carilerDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet33.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet33.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet33.xss">
+      <DependentUpon>carilerDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet34.xsc">
+      <DependentUpon>carilerDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet34.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet34.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet34.xss">
+      <DependentUpon>carilerDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet35.xsc">
+      <DependentUpon>carilerDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet35.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet35.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet35.xss">
+      <DependentUpon>carilerDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet36.xsc">
+      <DependentUpon>carilerDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet36.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet36.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet36.xss">
+      <DependentUpon>carilerDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet37.xsc">
+      <DependentUpon>carilerDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet37.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet37.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet37.xss">
+      <DependentUpon>carilerDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet38.xsc">
+      <DependentUpon>carilerDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet38.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet38.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet38.xss">
+      <DependentUpon>carilerDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet39.xsc">
+      <DependentUpon>carilerDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet39.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet39.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet39.xss">
+      <DependentUpon>carilerDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet4.xsc">
+      <DependentUpon>carilerDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet4.xss">
+      <DependentUpon>carilerDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet40.xsc">
+      <DependentUpon>carilerDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet40.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet40.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet40.xss">
+      <DependentUpon>carilerDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet41.xsc">
+      <DependentUpon>carilerDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet41.xss">
+      <DependentUpon>carilerDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet42.xsc">
+      <DependentUpon>carilerDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet42.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet42.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet42.xss">
+      <DependentUpon>carilerDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet43.xsc">
+      <DependentUpon>carilerDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet43.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet43.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet43.xss">
+      <DependentUpon>carilerDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet44.xsc">
+      <DependentUpon>carilerDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet44.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet44.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet44.xss">
+      <DependentUpon>carilerDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet45.xsc">
+      <DependentUpon>carilerDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet45.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet45.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet45.xss">
+      <DependentUpon>carilerDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet46.xsc">
+      <DependentUpon>carilerDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet46.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet46.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet46.xss">
+      <DependentUpon>carilerDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet47.xsc">
+      <DependentUpon>carilerDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet47.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet47.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet47.xss">
+      <DependentUpon>carilerDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet48.xsc">
+      <DependentUpon>carilerDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet48.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet48.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet48.xss">
+      <DependentUpon>carilerDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet49.xsc">
+      <DependentUpon>carilerDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet49.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet49.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet49.xss">
+      <DependentUpon>carilerDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet5.xsc">
+      <DependentUpon>carilerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet5.xss">
+      <DependentUpon>carilerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet50.xsc">
+      <DependentUpon>carilerDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet50.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet50.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet50.xss">
+      <DependentUpon>carilerDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet51.xsc">
+      <DependentUpon>carilerDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet51.xss">
+      <DependentUpon>carilerDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet52.xsc">
+      <DependentUpon>carilerDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet52.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet52.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet52.xss">
+      <DependentUpon>carilerDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet53.xsc">
+      <DependentUpon>carilerDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet53.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet53.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet53.xss">
+      <DependentUpon>carilerDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet54.xsc">
+      <DependentUpon>carilerDataSet54.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet54.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet54.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet54.xss">
+      <DependentUpon>carilerDataSet54.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet55.xsc">
+      <DependentUpon>carilerDataSet55.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet55.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet55.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet55.xss">
+      <DependentUpon>carilerDataSet55.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet56.xsc">
+      <DependentUpon>carilerDataSet56.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet56.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet56.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet56.xss">
+      <DependentUpon>carilerDataSet56.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet57.xsc">
+      <DependentUpon>carilerDataSet57.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet57.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet57.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet57.xss">
+      <DependentUpon>carilerDataSet57.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet58.xsc">
+      <DependentUpon>carilerDataSet58.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet58.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet58.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet58.xss">
+      <DependentUpon>carilerDataSet58.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet59.xsc">
+      <DependentUpon>carilerDataSet59.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet59.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet59.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet59.xss">
+      <DependentUpon>carilerDataSet59.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet6.xsc">
+      <DependentUpon>carilerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet6.xss">
+      <DependentUpon>carilerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet60.xsc">
+      <DependentUpon>carilerDataSet60.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet60.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet60.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet60.xss">
+      <DependentUpon>carilerDataSet60.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet61.xsc">
+      <DependentUpon>carilerDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet61.xss">
+      <DependentUpon>carilerDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet62.xsc">
+      <DependentUpon>carilerDataSet62.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet62.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet62.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet62.xss">
+      <DependentUpon>carilerDataSet62.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet63.xsc">
+      <DependentUpon>carilerDataSet63.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet63.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet63.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet63.xss">
+      <DependentUpon>carilerDataSet63.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet64.xsc">
+      <DependentUpon>carilerDataSet64.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet64.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet64.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet64.xss">
+      <DependentUpon>carilerDataSet64.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet65.xsc">
+      <DependentUpon>carilerDataSet65.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet65.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet65.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet65.xss">
+      <DependentUpon>carilerDataSet65.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet66.xsc">
+      <DependentUpon>carilerDataSet66.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet66.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet66.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet66.xss">
+      <DependentUpon>carilerDataSet66.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet67.xsc">
+      <DependentUpon>carilerDataSet67.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet67.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet67.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet67.xss">
+      <DependentUpon>carilerDataSet67.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet7.xsc">
+      <DependentUpon>carilerDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet7.xss">
+      <DependentUpon>carilerDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet8.xsc">
+      <DependentUpon>carilerDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet8.xss">
+      <DependentUpon>carilerDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet9.xsc">
+      <DependentUpon>carilerDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="carilerDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>carilerDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="carilerDataSet9.xss">
+      <DependentUpon>carilerDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

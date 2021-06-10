@@ -1,0 +1,100 @@
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\ilk_giris_ekranı.exe.config
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\ilk_giris_ekranı.exe
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\ilk_giris_ekranı.pdb
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.csprojAssemblyReference.cache
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.Properties.Resources.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.csproj.GenerateResource.cache
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.csproj.CoreCompileInputs.cache
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.exe
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.pdb
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\agq\ilk_giris_ekranı.resources.dll
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.From1.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.From1.agq.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\agq\ilk_giris_ekranı.resources.dll
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.anaform.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stokyükleme.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stokyükleilk.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.cari.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.veriset.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stokgör.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stokara.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.satisformu.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.cariara.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.caridüzenlesil.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.cariac.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.caridüzesilson.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stok_gör.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stok_sil.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.caridüzsilkay.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.satis.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.satissecme.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.satis_fat.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\itextsharp.dll
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\itextsharp.xml
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.csproj.CopyComplete
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.per_satis_kaydi.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.cari_satis_kaydi.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.personel_ekle.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.grafik_1.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.person_seç.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.dll
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.Video.dll
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.xml
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.Video.xml
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.per_satis_iade.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.iade.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.faturalar.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.hesaplar.resources
+C:\Users\Rasityilmaz\Desktop\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.HATIRLATICI.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\ilk_giris_ekranı.exe.config
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\ilk_giris_ekranı.exe
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\ilk_giris_ekranı.pdb
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\agq\ilk_giris_ekranı.resources.dll
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.dll
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.Video.dll
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\itextsharp.dll
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.xml
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.Video.xml
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\bin\Debug\itextsharp.xml
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.csprojAssemblyReference.cache
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.anaform.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.caridüzenlesil.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.cari.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.cariara.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.caridüzsilkay.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.cari_satis_kaydi.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.From1.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.grafik_1.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.HATIRLATICI.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.hesaplar.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.iade.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.personel_ekle.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.person_seç.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.per_satis_iade.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.per_satis_kaydi.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.Properties.Resources.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.satis.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.satisformu.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.satissecme.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.satis_fat.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stokara.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stokgör.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stokyükleilk.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stokyükleme.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.cariac.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.caridüzesilson.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stok_gör.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.stok_sil.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.faturalar.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.veriset.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.From1.agq.resources
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.csproj.GenerateResource.cache
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.csproj.CoreCompileInputs.cache
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\agq\ilk_giris_ekranı.resources.dll
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.csproj.CopyComplete
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.exe
+C:\Users\yilmaz\Desktop\C# Projeler\NTP\ilk_giris_ekranı\ilk_giris_ekranı\obj\Debug\ilk_giris_ekranı.pdb
